@@ -1,21 +1,22 @@
 \version "2.18.2"
 
 \paper {
-    paper-width = 190\mm
-    paper-height = 130\mm
+    paper-width = 140\mm
+    paper-height = 190\mm
     top-margin = 2\mm
     bottom-margin = 2\mm
     left-margin = 4\mm
     right-margin = 2\mm
+
+    print-page-number = "false"
 }
 
 \header {
     title = "Etude No.1"
     composer = "Heitor Villa Lobos"
     tagline = \markup {
-        Engraved by Alan Kang
-        at \simple #(strftime "%Y-%m-%d" (localtime (current-time)))
-        with LilyPond
+        \fontsize #-3.5
+        { Engraved by jania902@gmail.com with LilyPond }
     }
 }
 
@@ -30,6 +31,7 @@
         b-\RH #3 e-\RH #4 g,-\RH #2 b-\RH #3
         e,-\RH #1 g-\RH #2 b,-\RH #1 e-\RH #2
     }
+
     \repeat volta 2 {
         e, ( fis'-4 c-3 a'-2 )
         fis c'-1 a e'-0
@@ -43,8 +45,8 @@
         e, g b, e
     }
     \repeat volta 2 {
-        fis, ( dis' a g' )
-        dis b' a fis'
+        fis, ( dis' a a' )
+        dis, b' a fis'
         b, fis' a, b dis, a' a, dis
     }
     \repeat volta 2 {
